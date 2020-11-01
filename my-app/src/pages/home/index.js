@@ -18,7 +18,7 @@ const HomePage = () => {
 
     useEffect(() => {
         allTreks()
-    }, [allTreks])
+    })
 
 
     return (

@@ -38,6 +38,8 @@ const App = (props) => {
       return promise.json()
     }).then(response => {
       if(response.status) {
+        console.log(response.user.treks)
+        console.log(response.user)
         logIn({
           username: response.user.username,
           id: response.user._id,

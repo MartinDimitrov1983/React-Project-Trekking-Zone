@@ -30,19 +30,19 @@ const Navigation = () => {
                 <Route path="/register" component={RegisterPage} >
                     {loggedIn ? (<Redirect to="/" />) :(<RegisterPage />)}
                 </Route>
-                <Route path="/login">
+                <Route path="/login" component={LoginPage}>
                     { loggedIn ? (<Redirect to="/"/>) : <LoginPage />}
                 </Route>
-                <Route path="/create" component={CreateTrekPage} >
-                    {loggedIn ? (<CreateTrekPage />) : (<Redirect to="/" />)}
-                </Route>               
-                <Route path="/profile/:userid" > 
+                <Route path="/profile/:userid" component={ProfilePage}> 
                     {loggedIn ? (<ProfilePage />) : (<Redirect to="/login" />)}
                 </Route>
-                <Route path="/details/:trekid" > 
+                <Route path="/create" component={CreateTrekPage}>
+                    {loggedIn ? (<CreateTrekPage />) : (<Redirect to="/" />)}
+                </Route>               
+                <Route path="/details/:trekid" component={DetailsTrekPage}> 
                     {loggedIn ? (<DetailsTrekPage />) : (<Redirect to="/login" />)}
                 </Route>
-                <Route path="/edit/:trekid" > 
+                <Route path="/edit/:trekid" component={EditTrekPage}> 
                     {loggedIn ? (<EditTrekPage />) : (<Redirect to="/login" />)}
                 </Route>
 

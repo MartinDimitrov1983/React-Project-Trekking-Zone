@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useContext, useEffect } from "react"
 import styles from "./index.module.css"
 import UserContext from "../../Context"
 import PageLayout from "../../components/page-layout"
