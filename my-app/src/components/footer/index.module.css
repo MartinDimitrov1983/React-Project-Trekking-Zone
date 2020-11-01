@@ -1,0 +1,19 @@
+
+footer p{
+    font-family: cursive;
+    position:relative;
+    float:left;
+ }
+
+.footer{
+  color: rgba(255, 255, 255, 0.513);
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  }

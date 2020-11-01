@@ -1,0 +1,20 @@
+
+.formControl{
+    width: 50%;
+    margin: 0 auto;
+}
+
+textarea.formControl{
+    width: 50%;
+    margin: 0 auto;
+    resize: none;
+    height: 20vh;
+}
+
+label {
+    display:block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+  }

@@ -1,0 +1,59 @@
+.container {
+    max-width: 960px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  .no-found-picture, .homePicture{
+      top:0;
+      left:0;
+      transform: none;
+      width: 100%;
+      position: static;
+      margin: 0 auto;
+    }
+  
+    .flexEqual > * {
+      -ms-flex: 1;
+      flex: 1;
+    }
+  
+    @media (min-width: 768px) {
+      .flex-md-equal > * {
+        -ms-flex: 1;
+        flex: 1;
+      }
+    }
+  
+    .btn{
+      width: 25%;
+      margin: 0 auto;
+      background-color: rgba(51, 51, 51, 0.842);
+      color: white;
+      display: inline-block;
+    }
+    
+  .no-found-template{
+      margin: 0 auto;
+      text-align: center;
+   }
+  
+   .no-found-template{
+    color: rgba(255, 255, 255, 0.513);
+    }
+  
+    .fouronefour{
+      margin: 0 auto;
+      width: 100%;
+      margin-bottom: 2%;
+      border:solid;
+      border-color: rgba(27, 27, 27, 0.904);
+      box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.76);
+   }
+  
+   
+  
+  

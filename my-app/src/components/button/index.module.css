@@ -1,0 +1,12 @@
+*{
+    font-family: cursive;
+    
+  }
+
+.btn{
+    width: 25%;
+    margin: 0 auto;
+    background-color: rgba(51, 51, 51, 0.842);
+    color: white;
+    display: block;
+  }

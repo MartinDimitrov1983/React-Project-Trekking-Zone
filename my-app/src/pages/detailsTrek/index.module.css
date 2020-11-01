@@ -1,0 +1,51 @@
+*{
+    font-family: cursive;
+    
+  }
+  
+.single-trek-details{
+    background-color:rgba(255, 255, 255, 0.849);
+     padding: 2%;
+     margin:auto;
+     max-width: 80%;
+     border:solid;
+     border-radius:1rem;
+     border-color:rgb(241, 179, 6);
+     box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.712);
+  }
+
+  .detailsImg{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+    border:1px solid black;
+  }
+
+  .overflow-hidden { overflow: hidden; }
+
+  .infoType{
+    text-decoration: underline;
+ }
+ 
+ .trekDescription{
+    font-style: italic;
+ }
+
+ .buttonsTogether{
+    margin: auto;
+    margin-top:2%;
+  }
+  
+  .aButton{
+    color: rgb(46, 45, 45);
+    padding:10px;
+    transition: ease-in-out color .15s;
+  }
+  .aButton:hover{
+    color: rgb(78, 58, 2);
+    text-decoration: none;
+ }

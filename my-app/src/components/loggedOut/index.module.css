@@ -1,0 +1,45 @@
+
+.home{
+    background-color:rgba(255, 255, 255, 0.479);
+    padding:2%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top:2%;
+    border:solid;
+    border-radius:1rem;
+    border-color:rgb(241, 179, 6);
+    box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.712);
+    font-family: cursive;
+}
+
+.home{
+    background-color:rgba(255, 255, 255, 0.781);
+    max-width:90%;
+  }
+
+.homePicture{
+    top:0;
+    left:0;
+    transform: none;
+    width: 100%;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .textHighlighted{
+    color: rgb(248, 184, 8);
+  }
+
+  .flexEqual > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      flex: 1;
+    }
+  }
+
+  
