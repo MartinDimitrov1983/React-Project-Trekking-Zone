@@ -1,15 +1,15 @@
-1.1. Open terminal and run Mongod
+1 Open terminal and run Mongod
 
-2.1. Open Rest Api with VSCode or other editor
+2 Open Rest Api with VSCode or other editor
 
-2.2. Npm install
+3 Npm install
 
-2.3. Node . or node index
+4 Node . or node index
 
-3.1 Open My-app with another VSCode or other editor
+5 Open My-app with another VSCode or other editor
 
-3.2 Npm install
+6 Npm install
 
-3.3.Npm start
+7 Npm start
 
-4.Enjoy
+8 Enjoy
