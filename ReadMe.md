@@ -6,7 +6,7 @@
 
 2.3. Node . or node index
 
-3.1 Open Origami-workshop with another VSCode or other editor
+3.1 Open My-app with another VSCode or other editor
 
 3.2 Npm install
 
