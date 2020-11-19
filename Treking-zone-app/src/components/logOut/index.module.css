@@ -41,5 +41,17 @@
       flex: 1;
     }
   }
+  .colmd7{
+    padding-left: 7%;
+    padding-top: 3%;
+  }
+
+  .paddingLeft5{
+    padding-left: 5%;
+  }
+
+  .paddingLeft10{
+    padding-left: 10%;
+  }
 
   

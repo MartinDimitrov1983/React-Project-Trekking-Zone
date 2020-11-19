@@ -1,8 +1,6 @@
-import React, { useState, useEffect} from "react";
-import styles from "./index.module.css"
-import src from "./src"
-import Trek from "../trek"
-
+import React from 'react';
+import styles from './index.module.css'
+import Trek from '../trek'
 
 const TrekList = ({treks}) => {
 
@@ -20,4 +18,4 @@ const TrekList = ({treks}) => {
     )
 }
 
-export default TrekList;
+export default TrekList

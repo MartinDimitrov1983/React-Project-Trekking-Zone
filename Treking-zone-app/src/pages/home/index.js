@@ -1,9 +1,10 @@
-import React, { useContext, useState, useEffect } from "react"
-import PageLayout from "../../components/page-layout"
-import LoggedOut from "../../components/loggedOut"
-import WithTreks from "../../components/withTreks"
-import WithoutTreks from "../../components/withoutTreks"
-import UserContext from "../../Context"
+import React, { useContext, useState, useEffect } from 'react'
+import PageLayout from '../../page-layout'
+import LogOut from '../../components/logOut'
+import TrekList from '../../components/trekList'
+import NoTreks from '../../components/noTreks'
+import UserContext from '../../Context'
+import {config } from '../../utils'
 
 const HomePage = () => {
     const context = useContext(UserContext)
@@ -11,7 +12,7 @@ const HomePage = () => {
     const [treks, setTreks] = useState([])
     
     const allTreks = async () => {
-        const promise = await fetch('http://localhost:9999/api/trek');
+        const promise = await fetch(config.trekURL);
         const treks = await promise.json();
         setTreks(treks)
     }
@@ -23,11 +24,11 @@ const HomePage = () => {
 
     return (
         <PageLayout>
-            {!loggedIn && <LoggedOut />}
-            {loggedIn && treks.length === 0 && <WithoutTreks/>}
-            {loggedIn && treks.length > 0 && <WithTreks treks={treks}/>}
+            {!loggedIn && <LogOut />}
+            {loggedIn && treks.length === 0 && <NoTreks/>}
+            {loggedIn && treks.length > 0 && <TrekList treks={treks}/>}
         </PageLayout>
     )
 }
 
-export default HomePage;
+export default HomePage

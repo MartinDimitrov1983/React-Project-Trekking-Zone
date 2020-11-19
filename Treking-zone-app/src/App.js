@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import UserContext from './Context'
 import getCookie from './utils/cookie'
+import config from './utils/config'
 
 const App = (props) => {
   const [user, setUser] = useState(null)
@@ -22,13 +23,13 @@ const App = (props) => {
 
   useEffect(() => {
     const token = getCookie('x-auth-token')
-    if(!token) {
+    if (!token) {
       logOut()
       setLoading(false)
       return
     }
-
-    fetch('http://localhost:9999/api/user/verify', {
+    
+    fetch(`${config.userURL}verify`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -37,7 +38,7 @@ const App = (props) => {
     }).then(promise => {
       return promise.json()
     }).then(response => {
-      if(response.status) {
+      if (response.status) {
         console.log(response.user.treks)
         console.log(response.user)
         logIn({

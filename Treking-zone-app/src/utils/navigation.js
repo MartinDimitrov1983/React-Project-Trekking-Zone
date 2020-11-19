@@ -3,27 +3,27 @@ const getNavigation = (user) => {
   const authLinks = [
     
     {
-      title: "Request trek",
-      link: "/create"
+      title: 'Request trek',
+      link: '/create'
     },
     {
       title: `Hello, ${user && user.username}`,
       link: `/profile/${user && user.id}`
     },
     {
-      title: "Logout",
+      title: 'Logout',
       link: `/logout`
     }
   ]
 
   const guestLinks = [
     {
-      title: "Register",
-      link: "/register"
+      title: 'Register',
+      link: '/register'
     },
     {
-      title: "Login",
-      link: "/login"
+      title: 'Login',
+      link: '/login'
     }
   ]
   const loggedIn = user && user.loggedIn

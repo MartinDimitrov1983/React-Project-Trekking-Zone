@@ -22,13 +22,15 @@
 .overflow-hidden { overflow: hidden; }
 
 .treksPlaceholder{
-  background-color:rgba(255, 255, 255, 0.849);
+background-color:rgba(255, 255, 255, 0.849);
 flex: 0 1 30%;
 margin: 2%;
-max-width:25%;
+max-width:24%;
 border:solid;
 border-color:rgb(241, 179, 6);
 box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.712);
+width:20rem;
+height: 18rem;
 }
 
 .trek-details{

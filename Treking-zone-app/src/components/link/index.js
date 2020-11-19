@@ -1,10 +1,10 @@
-import React from "react" 
-import { Link } from "react-router-dom"
+import React from 'react' 
+import { Link } from 'react-router-dom'
 
 const LinkComponent = ({href, className, title, children, onClick}) => {
 
     return (
-        <Link to={href || "/"} className={className || ""} onClick = {onClick}>
+        <Link to={href || '/'} className={className || ''} onClick = {onClick}>
                 {title}
                 {children}
         </Link>
@@ -12,4 +12,4 @@ const LinkComponent = ({href, className, title, children, onClick}) => {
 
 }
 
-export default LinkComponent;
+export default LinkComponent

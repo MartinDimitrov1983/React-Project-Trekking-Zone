@@ -2,16 +2,12 @@ const models = require('../models');
 
 module.exports = {
     get: (req, res, next) => {
-        // const length = req.query.length ? parseInt(req.query.length) : 20
-        // .sort('-created_at').limit(length)
         models.Trek.find().populate('author')
             .then((treks) => res.send(treks))
             .catch(next);
     },
 
     detail: (req, res, next) => {
-        // const length = req.query.length ? parseInt(req.query.length) : 20
-        // .sort('-created_at').limit(length)
         const id = req.params.id;
         models.Trek.findOne({_id : id}).populate('author')
             .then((treks) => res.send(treks))
